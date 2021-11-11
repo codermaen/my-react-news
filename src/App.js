@@ -9,7 +9,7 @@ const CountriesPage = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch(`http://newsapi.org/v2/top-headlines?country=${country}&apiKey=${'45512bf52fe44ac888e6bfb092b69da0'}&pageSize=5`, {})
+    fetch(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${'45512bf52fe44ac888e6bfb092b69da0'}&pageSize=5`, {})
       .then((res) => res.json())
       .then((response) => {
         setData(response.articles);
